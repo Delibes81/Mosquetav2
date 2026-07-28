@@ -1,7 +1,8 @@
 "use client";
 
 import Link from 'next/link';
-import { Search, ShoppingCart, Menu, User, MapPin } from 'lucide-react';
+import Image from 'next/image';
+import { Search, ShoppingCart, Menu, Package, MapPin } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -10,13 +11,7 @@ export default function Navbar() {
       <div className="bg-gray-900 text-gray-300 text-[11px] font-medium py-1 px-4 border-b border-gray-700">
         <div className="max-w-[1400px] mx-auto flex justify-between items-center">
           <div className="flex gap-4">
-            <Link href="/b2b" className="hover:text-white transition-colors">Atención B2B</Link>
             <span className="cursor-default">Línea Directa: 55-345-678</span>
-            <Link href="/rastreo" className="hover:text-white transition-colors">Rastrear Pedido</Link>
-          </div>
-          <div className="hidden sm:flex gap-4">
-            <Link href="/facturacion" className="hover:text-white transition-colors">Facturación</Link>
-            <Link href="/soporte" className="hover:text-white transition-colors">Soporte Técnico</Link>
           </div>
         </div>
       </div>
@@ -26,12 +21,15 @@ export default function Navbar() {
         <div className="max-w-[1400px] mx-auto flex items-center justify-between gap-4 sm:gap-6">
           
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 flex-shrink-0">
-            <div className="bg-mosqueta-primary text-white px-2 py-0.5 text-2xl font-black leading-none font-montserrat rounded-sm">M</div>
-            <div className="flex flex-col">
-              <span className="font-montserrat font-black text-xl tracking-tighter leading-none mb-0.5">MOSQUETA</span>
-              <span className="text-[9px] font-bold tracking-widest text-gray-300 leading-none">HOGAR & OFICINA</span>
-            </div>
+          <Link href="/" className="flex items-center flex-shrink-0">
+            <Image 
+              src="/Artboard 4 copy.png" 
+              alt="Mosqueta Hogar & Oficina" 
+              width={200} 
+              height={50} 
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Buscador Masivo */}
@@ -59,11 +57,11 @@ export default function Navbar() {
               </div>
             </button>
 
-            <Link href="/cuenta" className="flex items-center gap-2 hover:border-gray-400 border border-transparent p-1.5 rounded-sm transition-all">
-              <User className="w-6 h-6 text-white" />
+            <Link href="/rastreo" className="flex items-center gap-2 hover:border-gray-400 border border-transparent p-1.5 rounded-sm transition-all">
+              <Package className="w-6 h-6 text-white" />
               <div className="hidden sm:flex flex-col items-start leading-none">
-                <span className="text-[10px] text-gray-300">Hola, Identifícate</span>
-                <span className="text-xs font-bold">Mi Cuenta</span>
+                <span className="text-[10px] text-gray-300">Sigue tu envío</span>
+                <span className="text-xs font-bold">Rastrear Pedido</span>
               </div>
             </Link>
 

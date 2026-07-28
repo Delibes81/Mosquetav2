@@ -18,6 +18,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Mosqueta | Hogar y Oficina",
   description: "60 años equipando los hogares y corporativos de México.",
+  icons: {
+    icon: "/Artboard 3.png",
+  },
 };
 
 export default function RootLayout({
