@@ -95,7 +95,7 @@ export default function CatalogoPage() {
             <p className="text-sm text-gray-400 font-medium">Equipamiento directo de fábrica. Más de 5,000 SKUs disponibles.</p>
           </div>
           <div className="hidden sm:block text-right">
-            <span className="bg-mosqueta-primary text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest">Atención Especial B2B</span>
+            <span className="bg-mosqueta-primary text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest">Atención Especial Empresas</span>
           </div>
         </FadeIn>
       </div>

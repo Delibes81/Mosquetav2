@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { FadeIn } from '@/components/animations/FadeIn';
 
 export const metadata = {
-  title: 'Ventas Corporativas B2B | Mosqueta',
+  title: 'Ventas Corporativas para Empresas | Mosqueta',
   description: 'Soluciones integrales de equipamiento para empresas, hoteles, restaurantes y corporativos.',
 };
 
@@ -16,7 +16,7 @@ export default function CorporativoPage() {
       <div className="bg-gray-900 text-white border-b-4 border-[#b0164e]">
         <div className="max-w-[1400px] mx-auto px-4 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="w-full md:w-[60%]">
-            <span className="bg-[#b0164e] text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3 inline-block">División B2B</span>
+            <span className="bg-[#b0164e] text-white text-[10px] font-bold px-2 py-1 uppercase tracking-widest mb-3 inline-block">División Empresas</span>
             <h1 className="text-3xl md:text-5xl font-black font-montserrat tracking-tight uppercase leading-none mb-4">
               Portal Empresarial
             </h1>
@@ -25,7 +25,7 @@ export default function CorporativoPage() {
             </p>
           </div>
           <div className="w-full md:w-[40%] flex flex-col sm:flex-row gap-3 justify-end">
-            <a href="#contacto-b2b" className="bg-mosqueta-primary text-white px-6 py-3 font-black uppercase text-xs tracking-widest hover:bg-[#b0164e] transition-colors shadow-sm text-center border-b-4 border-[#8f1240]">
+            <a href="#contacto-empresas" className="bg-mosqueta-primary text-white px-6 py-3 font-black uppercase text-xs tracking-widest hover:bg-[#b0164e] transition-colors shadow-sm text-center border-b-4 border-[#8f1240]">
               Solicitar Cotización
             </a>
             <Link href="/catalogo" className="bg-white text-gray-900 px-6 py-3 font-black uppercase text-xs tracking-widest hover:bg-gray-200 transition-colors shadow-sm text-center border border-gray-300">
@@ -44,7 +44,7 @@ export default function CorporativoPage() {
             {/* Beneficios - Grid Cuadrado */}
             <div className="bg-white border border-gray-300 rounded-sm shadow-sm">
               <div className="bg-gray-100 border-b border-gray-300 px-4 py-3">
-                <h2 className="text-sm font-black text-gray-900 uppercase tracking-widest">Ventajas de la Cuenta B2B</h2>
+                <h2 className="text-sm font-black text-gray-900 uppercase tracking-widest">Ventajas de la Cuenta Empresarial</h2>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-gray-200">
                 
@@ -115,10 +115,25 @@ export default function CorporativoPage() {
               </div>
             </div>
 
+            {/* Clientes Corporativos */}
+            <div className="bg-white border border-gray-300 rounded-sm shadow-sm overflow-hidden">
+              <div className="bg-gray-100 border-b border-gray-300 px-4 py-3">
+                <h2 className="text-sm font-black text-gray-900 uppercase tracking-widest text-center">Nuestros Clientes Corporativos</h2>
+              </div>
+              <div className="p-6 md:p-8 bg-white">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12 items-center justify-items-center">
+                  <Image src="/clientes/marti.svg" alt="Grupo Martí" width={140} height={56} className="w-auto h-10 md:h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+                  <Image src="/clientes/ara.svg" alt="Desarrollos Residenciales ARA" width={140} height={56} className="w-auto h-10 md:h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+                  <Image src="/clientes/nestle.svg" alt="Nestlé" width={140} height={56} className="w-auto h-10 md:h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+                  <Image src="/clientes/televisa.svg" alt="Televisa" width={140} height={56} className="w-auto h-10 md:h-12 grayscale opacity-70 hover:grayscale-0 hover:opacity-100 hover:scale-105 transition-all duration-300" />
+                </div>
+              </div>
+            </div>
+
           </div>
 
           {/* Sidebar Derecho: Formulario de Cotización (25%) */}
-          <div className="w-full lg:w-[25%] flex-shrink-0" id="contacto-b2b">
+          <div className="w-full lg:w-[25%] flex-shrink-0" id="contacto-empresas">
             <div className="bg-white border-2 border-gray-400 p-5 rounded-sm shadow-md sticky top-24">
               
               <div className="border-b border-gray-200 pb-4 mb-5">

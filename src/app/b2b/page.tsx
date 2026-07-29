@@ -2,7 +2,7 @@ import { Building2, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Portal B2B | Mosqueta',
+  title: 'Portal Empresas | Mosqueta',
   description: 'Accede a tu cuenta empresarial de Mosqueta.',
 };
 
@@ -16,7 +16,7 @@ export default function B2BPage() {
           <div className="relative z-10">
             <Building2 className="w-12 h-12 text-mosqueta-primary mb-6" />
             <h1 className="text-3xl font-black font-montserrat uppercase tracking-tight mb-4 leading-tight">
-              Portal Empresarial B2B
+              Portal Empresarial
             </h1>
             <p className="text-sm text-gray-300 font-medium leading-relaxed mb-8">
               Accede a tus precios de mayoreo, historial de facturación, seguimiento de entregas por volumen y contacta directamente a tu ejecutivo de cuenta.

@@ -18,11 +18,11 @@ export default function CotizacionesPage() {
             Solicitud de Cotización
           </h1>
           <p className="text-sm text-gray-300 font-medium leading-relaxed mb-6">
-            Cotizaciones formales para compras institucionales, licitaciones y proyectos B2B.
+            Cotizaciones formales para compras institucionales, licitaciones y proyectos Empresariales.
           </p>
           <div className="bg-white/10 p-4 border border-white/20">
             <p className="text-[10px] font-bold uppercase tracking-widest text-mosqueta-primary">Importante</p>
-            <p className="text-xs text-gray-200 mt-1">El monto mínimo para cotización formal B2B es de $50,000 MXN o más de 10 unidades. Para compras menores, por favor utilice nuestro carrito de compras B2C.</p>
+            <p className="text-xs text-gray-200 mt-1">El monto mínimo para cotización formal para empresas es de $50,000 MXN o más de 10 unidades. Para compras menores, por favor utilice nuestro carrito de compras regular.</p>
           </div>
         </div>
 

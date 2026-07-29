@@ -42,7 +42,7 @@ export default function CuentaPage() {
               ¿Olvidaste tu contraseña?
             </a>
             <Link href="/b2b" className="text-xs text-center font-black text-mosqueta-primary hover:text-[#b0164e] uppercase tracking-widest flex items-center justify-center">
-              Soy Cliente Corporativo (B2B) <ChevronRight className="w-4 h-4 ml-1" />
+              Soy Cliente Corporativo (Empresas) <ChevronRight className="w-4 h-4 ml-1" />
             </Link>
           </div>
         </div>
